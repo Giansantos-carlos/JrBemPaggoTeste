@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/js.js"></script>
+    <title>Pagamento</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="container">
+        <div class="conteudo">
+            <h1>Pacotes de Adesivos</h1>       
+            <form name="teste">
+                <div>
+                    <h4><b>Escolha uma Forma de pagamento:</b></h4>               
+                    <input type="checkbox" class="mycheckbox" name="teste1" data-plugin="switchery"/>
+                    <img class="pagamento" src="img/boleto.png"><label class="pt-3" for="inputBasicOn">Boleto</label>
+                  </div>
+
+                  <div>             
+                    <input type="checkbox" class="mycheckbox" data-plugin="switchery"/>
+                    <img class="pagamento" src="img/cartao.png"><label class="pt-3" for="inputBasicOn">Cartão de credito</label>
+                  </div>
+
+                  <div>                
+                    <input type="checkbox" class="mycheckbox" data-plugin="switchery" />
+                    <img class="pagamento" src="img/pix.png"><label class="pt-3" for="inputBasicOn">Pix</label>
+                  </div>
+
+            </form>
+
+            <a href="index.html"><input class="btc" onclick="compra()" type="button" value="Comprar" id="btnpagamento">  </a> 
+            
+        </div>
+
+    </div>
+</body>
+</html>

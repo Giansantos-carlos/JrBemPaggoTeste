@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/index.css">
+    <script src="js/js.js"></script>
+    <title>Venda</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="container">
+        <div class="conteudo">
+            <h1>Pacotes de Adesivos</h1>
+        </div>      
+            <form name="me">
+                <div>
+                    <h4><b>Quais adesivos:</b></h4>              
+                    <input onselect="reset()" type="checkbox" class="mycheckbox"/>
+                    <label class="pt-3" for="inputBasicOn">React</label>
+                  </div>
+                  <div>
+                                  
+                    <input type="checkbox" class="mycheckbox"/>
+                    <label class="pt-3" for="inputBasicOn">Vue</label>
+                  </div>
+                  <div>
+                                  
+                    <input type="checkbox" class="mycheckbox"/>
+                    <label class="pt-3" for="inputBasicOn">Angular</label>
+                  </div>
+                  <h4><b>Quantos adesivos de cada?</b></h4>
+
+                  <div class="botoes">
+                    <button class="btn" type="button" name="botaomenos" onclick='menos1()'><i class="fa-solid fa-minus"></i></button>
+                    <input class="contador" type="text" size="5" name="textgol" value="0">
+                    <button class="btn"  type="button" name="botaomais" onclick='mais1()'><i class="fa-solid fa-plus"></i></button> 
+                    
+                </div>
+
+                <H4><b>Observações:</b></H4>
+
+                <textarea  class="textarea" id="textarea" name="obs" rows="4" cols="50"></textarea>                    
+            </form> 
+            <a href="pagamento.html"> <input type="button" value="Finalizar" id="btnenvio"></a>  
+        </div>  
+    </div>
+
+    <script src="https://kit.fontawesome.com/511782d2cc.js" crossorigin="anonymous"></script>
+</body>
+</html>
